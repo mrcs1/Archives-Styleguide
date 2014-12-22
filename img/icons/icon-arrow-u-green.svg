@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.1 (9971) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-arrow-u-green</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icons" sketch:type="MSArtboardGroup" transform="translate(-551.000000, -63.000000)" fill="#00A683">
+            <path d="M569.919,72.286 L561.435,63.801 C561.059,63.426 560.396,63.426 560.02,63.801 L551.535,72.286 C551.144,72.677 551.144,73.31 551.535,73.7 C551.73,73.896 551.986,73.993 552.242,73.993 C552.498,73.993 552.754,73.896 552.949,73.7 L560.727,65.922 L568.506,73.7 C568.896,74.091 569.529,74.091 569.919,73.7 C570.31,73.31 570.31,72.677 569.919,72.286 L569.919,72.286 Z M560.727,74.492 C560.176,74.492 559.727,74.94 559.727,75.492 L559.727,81.492 C559.727,82.045 560.176,82.492 560.727,82.492 C561.28,82.492 561.727,82.045 561.727,81.492 L561.727,75.492 C561.727,74.94 561.28,74.492 560.727,74.492 L560.727,74.492 Z" id="icon-arrow-u-green" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

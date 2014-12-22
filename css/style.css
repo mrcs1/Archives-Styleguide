@@ -1,0 +1,994 @@
+@font-face {
+  font-family: "Simple-Bold";
+  src: url("../fonts/lineto-simple-bold.eot");
+  src: url("../fonts/lineto-simple-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lineto-simple-bold.woff") format("woff"), url("../fonts/lineto-simple-bold.ttf") format("truetype"), url("../fonts/lineto-simple-bold.svg#lineto-simple-bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.AvenirNextLTPro-Regular {
+  font-family: AvenirNextLTPro-Regular;
+  font-weight: normal;
+  font-style: normal; }
+
+.AvenirNextLTPro-Cn {
+  font-family: AvenirNextLTPro-Cn;
+  font-weight: normal;
+  font-style: normal; }
+
+.AvenirNextLTPro-CnIt {
+  font-family: AvenirNextLTPro-CnIt;
+  font-weight: normal;
+  font-style: normal; }
+
+.AvenirNextLTPro-Bold {
+  font-family: AvenirNextLTPro-Bold;
+  font-weight: normal;
+  font-style: normal; }
+
+.AvenirNextLTPro-BoldIt {
+  font-family: AvenirNextLTPro-BoldIt;
+  font-weight: normal;
+  font-style: normal; }
+
+.AvenirNextLTPro-It {
+  font-family: AvenirNextLTPro-It;
+  font-weight: normal;
+  font-style: normal; }
+
+.AvenirNextLTPro-BoldCn {
+  font-family: AvenirNextLTPro-BoldCn;
+  font-weight: normal;
+  font-style: normal; }
+
+.AvenirNextLTPro-BoldCnIt {
+  font-family: AvenirNextLTPro-BoldCnIt;
+  font-weight: normal;
+  font-style: normal; }
+
+/**
+ * Just specify font-size, don't override current font.
+ */
+/**
+ * The "normal" weight font, usually weight 400
+ */
+/**
+ * The "headline" weight font
+ */
+/**
+ * The "Headline Date" weight font
+ */
+/**
+ * The "Body Intro" weight font
+ */
+/**
+ * The "Body regular" weight font
+ */
+/**
+ * The "Category Tag" weight font
+ */
+/**
+ * Helper function to normalize the line-height. Provides an easy way to
+ * handle 'auto' and unspecified lineheight values.
+ */
+/**
+ * Primary helper to get the font bits output correctly
+ */
+.img_zoom_in img {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+
+.img_zoom_in:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.corner, .corner_right {
+  background: none;
+  padding: 0;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  float: right;
+  cursor: pointer;
+  border-bottom: 0 !important;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+  .corner a, .corner_right a {
+    width: 100%;
+    height: 100%; }
+
+.corner_right {
+  width: 100%;
+  height: 100%; }
+
+.unfold {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+
+[class*='triangle-'] {
+  display: block; }
+
+::selection {
+  background: #00a786;
+  color: white; }
+
+::-moz-selection {
+  background: #00a786;
+  color: white; }
+
+html {
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  background: white;
+  font-family: "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  font-weight: 400;
+  overflow: auto;
+  height: 100%; }
+
+img {
+  margin: 0;
+  max-width: 100%; }
+
+.triangle-top-left {
+  content: '';
+  width: 0;
+  height: 0;
+  border-width: 1.25rem;
+  border-color: transparent;
+  border-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.35);
+  border-left-color: rgba(0, 0, 0, 0.35); }
+
+.triangle-top-right {
+  content: '';
+  width: 0;
+  height: 0;
+  border-width: 1.25rem;
+  border-color: transparent;
+  border-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.35);
+  border-right-color: rgba(0, 0, 0, 0.35); }
+
+.panel {
+  margin-top: 2em; }
+
+.padded {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+
+.archives {
+  background: #00a786;
+  border-bottom: solid 0.5rem #00a786;
+  color: #00a786; }
+
+.softgrey {
+  background: #b3b1b1;
+  border-bottom: solid 0.5rem #b3b1b1;
+  color: #b3b1b1; }
+
+.arts {
+  background: #ffb062;
+  border-bottom: solid 0.5rem #ffb062;
+  color: #ffb062; }
+
+.business {
+  background: #0f5ea0;
+  border-bottom: solid 0.5rem #0f5ea0;
+  color: #0f5ea0; }
+
+.commemoration {
+  background: #b5a16c;
+  border-bottom: solid 0.5rem #b5a16c;
+  color: #b5a16c; }
+
+.celebrations {
+  background: #ce3030;
+  border-bottom: solid 0.5rem #ce3030;
+  color: #ce3030; }
+
+.environment {
+  background: #30654e;
+  border-bottom: solid 0.5rem #30654e;
+  color: #30654e; }
+
+.education {
+  background: #628b3b;
+  border-bottom: solid 0.5rem #628b3b;
+  color: #628b3b; }
+
+.media {
+  background: #afb259;
+  border-bottom: solid 0.5rem #afb259;
+  color: #afb259; }
+
+.disasters {
+  background: #f1db7f;
+  border-bottom: solid 0.5rem #f1db7f;
+  color: #f1db7f; }
+
+.society {
+  background: #e8ab8f;
+  border-bottom: solid 0.5rem #e8ab8f;
+  color: #e8ab8f; }
+
+.health {
+  background: #ff7e7c;
+  border-bottom: solid 0.5rem #ff7e7c;
+  color: #ff7e7c; }
+
+.entertainment {
+  background: #dd4a74;
+  border-bottom: solid 0.5rem #dd4a74;
+  color: #dd4a74; }
+
+.work {
+  background: #536198;
+  border-bottom: solid 0.5rem #536198;
+  color: #536198; }
+
+.politics {
+  background: #473972;
+  border-bottom: solid 0.5rem #473972;
+  color: #473972; }
+
+.religion {
+  background: #755073;
+  border-bottom: solid 0.5rem #755073;
+  color: #755073; }
+
+.war {
+  background: #8d8f8f;
+  border-bottom: solid 0.5rem #8d8f8f;
+  color: #8d8f8f; }
+
+.tech {
+  background: #3fade3;
+  border-bottom: solid 0.5rem #3fade3;
+  color: #3fade3; }
+
+.sports {
+  background: #82a9dc;
+  border-bottom: solid 0.5rem #82a9dc;
+  color: #82a9dc; }
+
+.lifestyle {
+  background: #96694d;
+  border-bottom: solid 0.5rem #96694d;
+  color: #96694d; }
+
+h1 {
+  font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 60px;
+  line-height: 3.75rem;
+  font-weight: 400; }
+
+h2 {
+  font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 50px;
+  line-height: 3.125rem;
+  font-weight: 400; }
+
+h2.leadin {
+  font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 50px;
+  line-height: 3.125rem;
+  font-weight: 400; }
+
+h2.title {
+  font-family: "AvenirNextLTPro-Cn", "Avenir Next Pro Condensed", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 50px;
+  line-height: 3.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .2rem; }
+
+h2.condensed {
+  font-family: "AvenirNextLTPro-BoldCn", "Avenir Next Pro Condensed Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 50px;
+  line-height: 3.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .2rem; }
+
+h3 {
+  font-family: "AvenirNextLTPro-BoldCn", "Avenir Next Pro Condensed Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 40px;
+  line-height: 2.5rem;
+  font-weight: 400; }
+
+h4 {
+  font-family: "AvenirNextLTPro-BoldCn", "Avenir Next Pro Condensed Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-weight: 400; }
+
+h5 {
+  font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+  font-weight: 400; }
+
+h6 {
+  font-family: "Simple-Bold", Courier, monospace, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5em; }
+
+p {
+  font-family: "AvenirNextLTPro-Cn", "Avenir Next Pro Condensed", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+  font-weight: 400;
+  letter-spacing: .02em; }
+
+p.leadin {
+  font-family: "AvenirNextLTPro-BoldCn", "Avenir Next Pro Condensed Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+  font-weight: 400; }
+
+p.darkgreen {
+  font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #00745d;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
+  margin-bottom: .5rem; }
+
+.light {
+  color: white; }
+
+.dark {
+  color: #00745d; }
+
+.white-label {
+  color: white !important;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: .5em;
+  margin-bottom: 0; }
+
+.date_tag {
+  font-family: "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-weight: 400; }
+
+.date_tag:before {
+  content: "\00a0 "; }
+
+.smallcaps {
+  text-transform: uppercase;
+  letter-spacing: .1rem; }
+
+.daily-title {
+  color: #00a786;
+  font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-weight: 400; }
+
+.daily-date {
+  text-transform: uppercase;
+  border-top: 4px #00a786 solid;
+  margin-top: 18px;
+  padding-top: 8px;
+  color: #00a786; }
+  .daily-date > h4 {
+    font-family: "AvenirNextLTPro-BoldCn", "Avenir Next Pro Condensed Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 22.5px;
+    line-height: 1.40625rem;
+    font-weight: 400; }
+
+.body_font {
+  font-family: "AvenirNextLTPro-Cn", "Avenir Next Pro Condensed", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-weight: 400; }
+
+.mono_font {
+  font-family: "Simple-Bold", Courier, monospace, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5em; }
+
+nav {
+  height: 160px;
+  background-color: #00a786;
+  z-index: 9999;
+  width: 100%;
+  padding: 0;
+  border-bottom: 4px #00745d solid; }
+  @media only screen and (max-width: 1012px) {
+    nav {
+      height: 48px; } }
+  nav ul {
+    display: table;
+    margin: 0 auto; }
+    nav ul li {
+      display: inline;
+      font-family: "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 22.5px;
+      line-height: 1.40625rem;
+      font-weight: 400;
+      text-align: center;
+      float: left;
+      margin: .6em .6em;
+      width: auto; }
+      nav ul li .current {
+        color: #00745d !important; }
+      nav ul li a {
+        text-decoration: none !important;
+        color: white;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+        nav ul li a:hover {
+          color: rgba(255, 255, 255, 0.7);
+          text-decoration: none !important; }
+        nav ul li a:active {
+          color: black;
+          text-decoration: none !important; }
+
+.masthead {
+  text-align: center; }
+  .masthead > img {
+    margin-top: 1.875em; }
+
+.desktop_nav {
+  margin-top: .75em; }
+
+.green-bg {
+  background: #00a786; }
+
+.grey-bg {
+  background: #b3b1b1; }
+
+.divider {
+  border-bottom: 8px solid rgba(0, 167, 134, 0.5);
+  margin-bottom: 42px;
+  margin-top: 30px; }
+
+.promo-section {
+  background: rgba(179, 177, 177, 0.2);
+  border-bottom: 8px solid rgba(179, 177, 177, 0.5);
+  max-height: 454px;
+  margin-bottom: 3.75em; }
+
+.promo-row {
+  background: rgba(179, 177, 177, 0.2); }
+
+.daily-row {
+  overflow: auto; }
+
+.promo_unit, .article_unit_xlarge, .article_unit_large, .article_unit_medium, .article_unit_small {
+  width: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: black;
+  margin-top: 0.9375em;
+  margin-bottom: 0.9375em; }
+
+.promo_unit {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 454px; }
+
+.promo_title {
+  float: left;
+  position: absolute;
+  bottom: 4rem;
+  padding-left: 2.3rem; }
+  .promo_title h1 {
+    font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 55px;
+    line-height: 3.4375rem;
+    font-weight: 400;
+    color: white; }
+    .promo_title h1 .date_tag {
+      font-family: "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+      font-weight: 400; }
+    .promo_title h1 .date_tag:before {
+      content: "\00a0 "; }
+    .promo_title h1 a {
+      text-decoration: none;
+      color: white;
+      -webkit-transition: 0.3s ease-in-out;
+      -moz-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
+      .promo_title h1 a:hover {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7); }
+      .promo_title h1 a:active {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.8); }
+
+.promo_section_link {
+  font-family: "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-weight: 400;
+  color: white; }
+  .promo_section_link a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+    background: url("../img/icon_arrow_r.svg") 85% 0.1em no-repeat;
+    background-size: .75em;
+    padding-right: 2em;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .promo_section_link a:hover {
+      text-decoration: none;
+      color: white;
+      background: url("../img/icon_arrow_r.svg") 95% 0.1em no-repeat;
+      background-size: .75em;
+      text-decoration: underline; }
+
+.promo_thumb {
+  max-height: 454px; }
+
+.promo_thumb_overlay {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 70%);
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 70%);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 70%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 70%);
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.article_thumb {
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 0 0 0; }
+  .article_thumb .thumb {
+    width: 100%;
+    display: block;
+    clear: both; }
+
+.article_thumb_overlay {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 10%, black 90%);
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 10%, black 90%);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 10%, black 90%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 10%, black 90%);
+  height: 2em;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.article_title {
+  position: relative;
+  top: -30px;
+  margin: 0 2em 2em 2em;
+  display: inline-block; }
+  .article_title h1, .article_title h2 {
+    color: rgba(255, 255, 255, 0.5); }
+    .article_title h1 .date_tag, .article_title h2 .date_tag {
+      font-family: "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+      font-weight: 400; }
+    .article_title h1 .date_tag:before, .article_title h2 .date_tag:before {
+      content: "\00a0 "; }
+    .article_title h1 a, .article_title h2 a {
+      text-decoration: none;
+      color: white;
+      overflow: visible;
+      -webkit-transition: 0.3s ease-in-out;
+      -moz-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
+      .article_title h1 a:hover, .article_title h2 a:hover {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7); }
+      .article_title h1 a:active, .article_title h2 a:active {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.8); }
+
+.article_unit_promo {
+  margin: 0 0 0 0; }
+
+.article_unit_xlarge h2 {
+  font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 40px;
+  line-height: 2.5rem;
+  font-weight: 400; }
+
+.article_unit_large h2 {
+  font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-weight: 400; }
+
+.article_unit_medium h2 {
+  font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+  font-weight: 400; }
+.article_unit_medium .article_title {
+  top: -50px;
+  margin-top: 4.7em; }
+
+.article_share {
+  position: absolute;
+  top: 18px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+  .article_share h6 {
+    font-family: AvenirNextLTPro-BoldCn;
+    font-size: 1.125rem;
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    text-align: center; }
+
+.article_unit_small {
+  background: rgba(179, 177, 177, 0.2); }
+  .article_unit_small > .category_tag, .article_unit_small > .category_tag_small, .article_unit_small > .category_tag_promo {
+    position: relative !important;
+    bottom: 0;
+    float: left;
+    padding-left: 2rem; }
+
+.article_title_small {
+  position: relative;
+  float: right;
+  margin-top: .9375em; }
+  .article_title_small h2 {
+    font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    font-weight: 400; }
+    .article_title_small h2 a {
+      color: black;
+      -webkit-transition: 0.3s ease-in-out;
+      -moz-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
+      .article_title_small h2 a:hover {
+        color: rgba(0, 0, 0, 0.7); }
+
+.article_thumb_small {
+  float: left;
+  position: relative;
+  margin-top: .9375em; }
+
+.share_icons {
+  top: 20%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  text-align: center; }
+  .share_icons ul {
+    margin: 0 auto 0 auto;
+    list-style: none;
+    text-align: center;
+    display: inline-block; }
+  .share_icons ul li {
+    display: inline;
+    text-align: left;
+    float: left;
+    margin: .6em; }
+
+.icon {
+  height: 36px; }
+
+.media_icon {
+  height: 36px;
+  float: right;
+  position: absolute;
+  top: .66em;
+  right: .66em; }
+
+.unfold_white {
+  color: white !important;
+  z-index: 99; }
+
+.unfold_visible {
+  visibility: visible;
+  display: block;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s; }
+
+.category_tag, .category_tag_small, .category_tag_promo {
+  position: absolute;
+  bottom: 0;
+  float: left;
+  padding-left: 2rem; }
+  .category_tag > h6, .category_tag_small > h6, .category_tag_promo > h6 {
+    text-transform: uppercase; }
+    .category_tag > h6 > a.archives, .category_tag_small > h6 > a.archives, .category_tag_promo > h6 > a.archives {
+      color: #00a786;
+      background: none;
+      border-bottom: none;
+      -webkit-transition: 0.3s ease-in-out;
+      -moz-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
+      .category_tag > h6 > a.archives:hover, .category_tag_small > h6 > a.archives:hover, .category_tag_promo > h6 > a.archives:hover {
+        color: #00745d; }
+  .category_tag > h6 > a.arts, .category_tag_small > h6 > a.arts, .category_tag_promo > h6 > a.arts {
+    color: #ffb062;
+    background: none;
+    border-bottom: none;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .category_tag > h6 > a.arts:hover, .category_tag_small > h6 > a.arts:hover, .category_tag_promo > h6 > a.arts:hover {
+      color: #ff962f; }
+  .category_tag > h6 > a.environment, .category_tag_small > h6 > a.environment, .category_tag_promo > h6 > a.environment {
+    color: #30654e;
+    background: none;
+    border-bottom: none;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .category_tag > h6 > a.environment:hover, .category_tag_small > h6 > a.environment:hover, .category_tag_promo > h6 > a.environment:hover {
+      color: #204233; }
+  .category_tag > h6 > a.sports, .category_tag_small > h6 > a.sports, .category_tag_promo > h6 > a.sports {
+    color: #82a9dc;
+    background: none;
+    border-bottom: none;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .category_tag > h6 > a.sports:hover, .category_tag_small > h6 > a.sports:hover, .category_tag_promo > h6 > a.sports:hover {
+      color: #5a8ed1; }
+
+.category_tag_small {
+  position: relative;
+  padding-left: 0; }
+
+.category_tag_promo {
+  padding-left: 2.3rem; }
+
+.advert-mpu {
+  background: rgba(179, 177, 177, 0.2);
+  border-top: 8px solid rgba(179, 177, 177, 0.5);
+  text-align: center; }
+  .advert-mpu .mpu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    position: relative;
+    display: inline; }
+
+.social-block, .latest-vine {
+  background: #00a786;
+  border-top: 8px solid #00745d;
+  text-align: center;
+  color: white; }
+  .social-block h3, .latest-vine h3 {
+    margin-top: 1.2rem; }
+
+.shaded {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid white;
+  text-align: center; }
+
+.spacer {
+  margin-bottom: 1em;
+  height: 1em; }
+
+footer {
+  background: #00a786;
+  border-top: 8px solid #00745d;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-top: 4em; }
+
+.tagline {
+  padding-top: .6em; }
+
+button, .button, .button-dark {
+  font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 26.25px;
+  line-height: 1.64063rem;
+  font-weight: 400;
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: .85rem;
+  padding-right: 2rem;
+  padding-bottom: .75rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: white;
+  border-color: #00a786;
+  color: #00a786;
+  box-shadow: 0 2px 0px #00a786;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+  button >
+  label, .button >
+  label, .button-dark >
+  label {
+    font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 22.5px;
+    line-height: 1.40625rem;
+    font-weight: 400;
+    color: #00a786;
+    background: url("../img/icons/icon-plus-green.svg") right center no-repeat;
+    background-size: 24px;
+    padding-right: 2em; }
+
+button:focus, button:hover, .button:hover, .button-dark:hover, .button:focus, .button-dark:focus {
+  background-color: #00a786;
+  color: white;
+  border-color: #00745d;
+  box-shadow: 0 2px 0px #00745d; }
+  button:focus >
+  label, button:hover >
+  label, .button:hover >
+  label, .button-dark:hover >
+  label, .button:focus >
+  label, .button-dark:focus >
+  label {
+    color: white;
+    background: url("../img/icons/icon-plus-white.svg") right center no-repeat;
+    background-size: 24px;
+    padding-right: 2em; }
+
+button:active, .button:active, .button-dark:active {
+  box-shadow: 0 -2px 0px #00745d; }
+
+.button-dark {
+  border-radius: 1000px;
+  border-color: white;
+  background: #00745d;
+  box-shadow: 0 2px 0px white;
+  color: white; }
+  .button-dark >
+  label {
+    font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 22.5px;
+    line-height: 1.40625rem;
+    font-weight: 400;
+    color: white;
+    background: url("../img/icons/icon-plus-white.svg") right center no-repeat;
+    background-size: 24px;
+    padding-right: 2em; }
+
+.button-dark:hover, .button-dark:focus {
+  background: white; }
+  .button-dark:hover >
+  label, .button-dark:focus >
+  label {
+    font-family: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 22.5px;
+    line-height: 1.40625rem;
+    font-weight: 400;
+    color: #00a786;
+    background: url("../img/icons/icon-plus-green.svg") right center no-repeat;
+    background-size: 24px;
+    padding-right: 2em; }
+
+.submit >
+label {
+  background: url("../img/icons/icon-arrow-r-white.svg") right center no-repeat; }
+
+.submit:hover >
+label, .submit:focus >
+label {
+  background: url("../img/icons/icon-arrow-r-green.svg") right center no-repeat; }
+
+.icons ul {
+  display: table;
+  margin: 0 auto; }
+  .icons ul li {
+    display: inline;
+    font-family: "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif, "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 22.5px;
+    line-height: 1.40625rem;
+    font-weight: 400;
+    text-align: center;
+    float: left;
+    margin: .6em .6em;
+    width: auto; }
+    .icons ul li a {
+      border: none;
+      -webkit-transition: 0.3s ease-in-out;
+      -moz-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      opacity: 1; }
+      .icons ul li a:hover {
+        opacity: .8; }

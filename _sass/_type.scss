@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Simple-Bold";
+    src:url("../fonts/lineto-simple-bold.eot");
+    src:url("../fonts/lineto-simple-bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/lineto-simple-bold.woff") format("woff"),
+        url("../fonts/lineto-simple-bold.ttf") format("truetype"),
+        url("../fonts/lineto-simple-bold.svg#lineto-simple-bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.AvenirNextLTPro-Regular { 
+  font-family: AvenirNextLTPro-Regular;
+  font-weight: normal;
+  font-style: normal;
+}
+.AvenirNextLTPro-Cn { 
+  font-family: AvenirNextLTPro-Cn;
+  font-weight: normal;
+  font-style: normal;
+}
+.AvenirNextLTPro-CnIt { 
+  font-family: AvenirNextLTPro-CnIt;
+  font-weight: normal;
+  font-style: normal;
+}
+.AvenirNextLTPro-Bold { 
+  font-family: AvenirNextLTPro-Bold;
+  font-weight: normal;
+  font-style: normal;
+}
+.AvenirNextLTPro-BoldIt { 
+  font-family: AvenirNextLTPro-BoldIt;
+  font-weight: normal;
+  font-style: normal;
+}
+.AvenirNextLTPro-It { 
+  font-family: AvenirNextLTPro-It;
+  font-weight: normal;
+  font-style: normal;
+}
+.AvenirNextLTPro-BoldCn { 
+  font-family: AvenirNextLTPro-BoldCn;
+  font-weight: normal;
+  font-style: normal;
+}
+.AvenirNextLTPro-BoldCnIt { 
+  font-family: AvenirNextLTPro-BoldCnIt;
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Type
+$lineheight-multiplier: 1.25;
+$default-lineheight: -1;
+// Must be the px font-size on your html element for proper rem calculation.
+$base-font-size: 16px;
+$base-font: "AvenirNextLTPro-Regular", "Avenir Next Pro", Futura, Arial, sans-serif;
+$base-font-bold: "AvenirNextLTPro-Bold", "Avenir Next Pro Bold", Futura, Arial, sans-serif;
+$body-font: "AvenirNextLTPro-Cn", "Avenir Next Pro Condensed", Futura, Arial, sans-serif;
+$body-font-bold: "AvenirNextLTPro-BoldCn", "Avenir Next Pro Condensed Bold", Futura, Arial, sans-serif;
+$mono-font: "Simple-Bold", Courier, monospace;
+ 
+/**
+ * Just specify font-size, don't override current font.
+ */
+@mixin font-size($fontsize, $lineheight: $default-lineheight, $base: $base-font-size) {
+  @if ($fontsize != 'auto') {
+    $lineheight: _normalize_lineheight($fontsize, $lineheight);
+  
+    font-size: $fontsize;
+    font-size: #{$fontsize/$base}rem;
+    line-height: $lineheight;
+    line-height: #{$lineheight/$base}rem;
+  }
+}
+ 
+/**
+ * The "normal" weight font, usually weight 400
+ */
+@mixin font-reg($fontsize, $lineheight: $default-lineheight) {
+  @include _font_setup($base-font, $fontsize, $lineheight);
+  font-weight: 400;
+}
+
+/**
+ * The "headline" weight font
+ */
+@mixin headline($fontsize, $lineheight: $default-lineheight) {
+  @include _font_setup($base-font-bold, $fontsize, $lineheight);
+  font-weight: 400;
+}
+
+/**
+ * The "Headline Date" weight font
+ */
+@mixin headline-date($fontsize, $lineheight: $default-lineheight) {
+  @include _font_setup($base-font, $fontsize, $lineheight);
+  font-weight: 400;
+}
+
+/**
+ * The "Body Intro" weight font
+ */
+@mixin body-intro($fontsize, $lineheight: $default-lineheight) {
+  @include _font_setup($body-font-bold, $fontsize, $lineheight);
+  font-weight: 400;
+}
+
+/**
+ * The "Body regular" weight font
+ */
+@mixin body-reg($fontsize, $lineheight: $default-lineheight) {
+  @include _font_setup($body-font, $fontsize, $lineheight);
+  font-weight: 400;
+}
+
+/**
+ * The "Category Tag" weight font
+ */
+@mixin cat-tag($fontsize, $lineheight: $default-lineheight) {
+  @include _font_setup($mono-font, $fontsize, $lineheight);
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+/**
+ * Helper function to normalize the line-height. Provides an easy way to
+ * handle 'auto' and unspecified lineheight values.
+ */
+@function _normalize_lineheight($fontsize, $lineheight) {
+  // if $fontsize is 'auto', we won't be outputting a font-size or line-height
+  // so it doesn't matter what it is.
+  @if ($fontsize == 'auto') {
+    @return 0;
+  }
+  @if ($lineheight == $default-lineheight) {
+    @return $fontsize * $lineheight-multiplier;
+  }
+  @return $lineheight;
+}
+ 
+/**
+ * Primary helper to get the font bits output correctly
+ */
+@mixin _font_setup($font, $fontsize, $lineheight, $font-fallback: $base-font) {
+  $lineheight: _normalize_lineheight($fontsize, $lineheight);
+  @include _font_family($font, $font-fallback);
+  
+  // Sometimes you just want the font-family, not the font-size
+  @if ($fontsize != 'auto') {
+    @include font-size($fontsize, $lineheight);
+  }
+}
+  
+@mixin _font_family($font, $font-fallback) {
+  @if ($font == 'base') {
+    font-family: $base-font;
+  } @else {
+    font-family: $font, $font-fallback;
+  }
+}

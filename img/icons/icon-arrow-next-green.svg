@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="34px" viewBox="0 0 19 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.1 (9971) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-arrow-next-green</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icons" sketch:type="MSArtboardGroup" transform="translate(-355.000000, -57.000000)" fill="#00A683">
+            <g id="icon-arrow-next-green" sketch:type="MSLayerGroup" transform="translate(364.500000, 73.000000) scale(-1, 1) translate(-364.500000, -73.000000) translate(355.000000, 56.000000)">
+                <path d="M17.228,35 C16.972,35 16.716,34.902 16.521,34.707 L0.521,18.707 C0.13,18.316 0.13,17.684 0.521,17.293 L16.521,1.293 C16.911,0.902 17.544,0.902 17.935,1.293 C18.325,1.684 18.325,2.316 17.935,2.707 L2.642,18 L17.935,33.293 C18.325,33.684 18.325,34.316 17.935,34.707 C17.739,34.902 17.483,35 17.228,35" id="Fill-1" sketch:type="MSShapeGroup"></path>
+                <path d="M17.228,27 C16.972,27 16.716,26.902 16.521,26.707 L8.52,18.707 C8.13,18.316 8.13,17.684 8.52,17.293 L16.521,9.293 C16.911,8.902 17.544,8.902 17.935,9.293 C18.325,9.684 18.325,10.316 17.935,10.707 L10.642,18 L17.935,25.293 C18.325,25.684 18.325,26.316 17.935,26.707 C17.739,26.902 17.483,27 17.228,27" id="Fill-2" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

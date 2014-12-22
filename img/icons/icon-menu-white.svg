@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="15px" viewBox="0 0 24 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.1 (9971) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-menu-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icons" sketch:type="MSArtboardGroup" transform="translate(-97.000000, -189.000000)" fill="#FFFFFF">
+            <g id="icon-menu-white" sketch:type="MSLayerGroup" transform="translate(97.000000, 189.500000)">
+                <path d="M22.957,2.161 L1.957,2.161 C1.405,2.161 0.957,1.713 0.957,1.161 C0.957,0.608 1.405,0.161 1.957,0.161 L22.957,0.161 C23.509,0.161 23.957,0.608 23.957,1.161 C23.957,1.713 23.509,2.161 22.957,2.161" id="Fill-1" sketch:type="MSShapeGroup"></path>
+                <path d="M22.957,8.161 L1.957,8.161 C1.405,8.161 0.957,7.713 0.957,7.161 C0.957,6.608 1.405,6.161 1.957,6.161 L22.957,6.161 C23.509,6.161 23.957,6.608 23.957,7.161 C23.957,7.713 23.509,8.161 22.957,8.161" id="Fill-2" sketch:type="MSShapeGroup"></path>
+                <path d="M22.957,14.161 L1.957,14.161 C1.405,14.161 0.957,13.713 0.957,13.161 C0.957,12.608 1.405,12.161 1.957,12.161 L22.957,12.161 C23.509,12.161 23.957,12.608 23.957,13.161 C23.957,13.713 23.509,14.161 22.957,14.161" id="Fill-3" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

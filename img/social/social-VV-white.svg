@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.1 (9971) - http://www.bohemiancoding.com/sketch -->
+    <title>social-VV-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="social" sketch:type="MSArtboardGroup" transform="translate(-191.000000, -43.000000)">
+            <g id="social-VV-white" sketch:type="MSLayerGroup" transform="translate(191.000000, 43.000000)">
+                <path d="M16,0 C7.164,0 0,7.164 0,16 C0,24.838 7.164,32 16,32 C24.837,32 32,24.838 32,16 C32,7.164 24.837,0 16,0" id="Fill-1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M8.888,10.522 C8.888,10.522 10.451,21.037 14.976,23.804 C15.595,24.163 16.295,24.146 16.767,23.739 C18.655,22.111 20.61,19.37 21.163,18.1 C22.203,18.199 22.92,17.944 22.92,17.944 L22.913,15.938 C22.913,15.938 21.388,15.966 21.097,15.971 C18.885,16.003 17.359,13.319 18.259,11.052 C18.882,9.481 19.978,10.613 20.173,11.101 C20.368,11.589 20.325,12.898 20.041,13.858 C20.388,14.666 22.269,15.095 22.699,14.419 C23.227,12.933 23.458,10.259 22.088,8.873 C21.185,7.958 18.916,7.494 17.255,8.536 C15.595,9.577 15.627,11.791 15.757,12.898 C15.888,14.005 16.246,16.349 18.46,17.651 C18.655,17.879 16.033,21.285 15.888,21.135 C12.632,17.782 11.753,10.554 11.753,10.554 L8.888,10.522" id="Fill-2" fill="#5FB68B" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
